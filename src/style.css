@@ -1,0 +1,144 @@
+body {
+  background-color: gainsboro;
+}
+
+.Tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.TabsList {
+  display: flex;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+.Tab {
+  padding: 0.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.map {
+  display: flex;
+
+  flex-wrap: wrap;
+  padding: 5px;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+h4 {
+  margin-top: 40px;
+}
+p {
+  margin-top: 0px;
+}
+.button {
+  border: 2px solid #0099cc;
+  border: 1px solid;
+  background: transparent;
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 40px;
+
+  color: blue;
+}
+.Table {
+  max-width: 300px;
+  height: 250px;
+  padding: 18px;
+  background-color: rgb(300, 241, 241);
+
+  text-align: center;
+
+  margin: 10px 12px;
+}
+@media only screen and (min-width: 350px) and (max-width: 389px) {
+  #root {
+    overflow: hidden;
+  }
+
+  .TabsList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Tab {
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+  }
+  .map {
+    margin-left: 20px;
+  }
+  .Table {
+    max-width: 300px;
+    height: 275px;
+    padding: 6px;
+    background-color: rgb(300, 241, 241);
+  }
+}
+@media only screen and (min-width: 390px) and (max-width: 900px) {
+  #root {
+    overflow: hidden;
+  }
+
+  .map {
+    margin-left: 10px;
+  }
+
+  .TabsList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Tab {
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .Table {
+    width: 300px;
+    height: 275px;
+    padding: 10px;
+    background-color: rgb(300, 241, 241);
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .TabsList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Tab {
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1485px) {
+  .TabsList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .map {
+    margin-left: 70px;
+  }
+
+  .Tab {
+    display: flex;
+    margin: 5px;
+    font-size: 18px;
+  }
+}
